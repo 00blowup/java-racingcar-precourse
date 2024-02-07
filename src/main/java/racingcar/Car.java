@@ -11,6 +11,11 @@ public class Car {
         this.name = name;
     }
 
+    /*
+    이 아래로는 메소드
+     */
+
+    // position 값을 리턴하는 메소드
     public int getPosition() {
         return position;
     }
@@ -20,7 +25,7 @@ public class Car {
         if(Randoms.pickNumberInRange(0,9)>=4) position++;
     }
 
-    // 본인의 현재 위치를 출력하는 메소드
+    // 본인의 현재 위치를 "name : ---"와 같은 형태로 출력하는 메소드
     public void printMyself() {
         StringBuilder sb = new StringBuilder();
         sb.append(name);
@@ -29,6 +34,7 @@ public class Car {
         System.out.println(sb);
     }
 
+    // name 값을 출력하는 메소드
     public void printName() {
         System.out.print(name);
     }
