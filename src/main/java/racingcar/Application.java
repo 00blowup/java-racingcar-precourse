@@ -59,6 +59,7 @@ public class Application {
         return nameList;
     }
 
+    // 시도 횟수를 입력받는 메소드
     static int inputNumberOfRounds() {
         System.out.println("시도할 회수는 몇회인가요?");
         int repeat = 0;
@@ -83,6 +84,7 @@ public class Application {
         return repeat;
     }
 
+    // 한 번의 시도를 진행하고, 그 결과를 출력하는 메소드
     static void executeRound(ArrayList<Car> cars) {
         for (Car car: cars) {
             car.goOrStop();
@@ -91,6 +93,7 @@ public class Application {
         System.out.println();
     }
 
+    // 최종 우승자를 판별하여 출력하는 메소드
     static void printWinner(ArrayList<Car> cars) {
         // position을 기준으로 내림차순 정렬
         cars.sort(CAR_COMPARATOR);
