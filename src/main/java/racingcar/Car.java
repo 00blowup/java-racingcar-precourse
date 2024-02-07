@@ -28,4 +28,8 @@ public class Car {
         for(int i=0; i<position; i++) sb.append("-");
         System.out.println(sb);
     }
+
+    public void printName() {
+        System.out.print(name);
+    }
 }
